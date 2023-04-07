@@ -9,6 +9,7 @@ public class Inventory {
 
     boolean decrementCapacity(int numberOfSeats) {
         if (capacity < numberOfSeats ) {
+            System.err.println("Incapacity booking error");
             return false;
         }
         capacity -= numberOfSeats;
